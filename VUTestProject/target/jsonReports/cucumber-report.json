@@ -1,0 +1,419 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Add Item to cart and validate cart",
+        "description": "",
+        "id": "add-item-to-cart;add-item-to-cart-and-validate-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4630850300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on home page to validate cart",
+            "match": {
+              "location": "SDAddToCart.user_is_on_home_page_to_validate_cart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9801656100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on Blouse to land on product detail page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouse",
+                  "offset": 15
+                }
+              ],
+              "location": "SDAddToCart.user_clicks_on_to_land_on_product_detail_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3041134900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters 2 and clicks on addtocart button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "SDAddToCart.user_enters_and_clicks_on_addtocart_button(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9471200,
+              "error_message": "java.lang.NullPointerException\r\n\tat pageObjects.Cart.\u003cinit\u003e(Cart.java:14)\r\n\tat stepDefinitions.SDAddToCart.cart_page_is_displayed_with_the_correct_(SDAddToCart.java:57)\r\n\tat ✽.Then cart page is displayed with the correct \u003citemname\u003e,2,$54(AddToCart.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "cart page is displayed with the correct \u003citemname\u003e,2,$54",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003citemname\u003e",
+                  "offset": 40
+                },
+                {
+                  "val": "2",
+                  "offset": 51
+                },
+                {
+                  "val": "$54",
+                  "offset": 53
+                }
+              ],
+              "location": "SDAddToCart.cart_page_is_displayed_with_the_correct_(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "close browsers",
+            "match": {
+              "location": "SDLogin.close_browsers()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Add Item to cart",
+    "description": "",
+    "id": "add-item-to-cart",
+    "keyword": "Feature",
+    "uri": "AddToCart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Registering with valid email",
+        "description": "",
+        "id": "register-to-site;registering-with-valid-email;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3597862800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on home page to validate login",
+            "match": {
+              "location": "SDLogin.user_is_on_home_page_to_validate_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10900254200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click on Signin link to land on Secure sign in Page",
+            "match": {
+              "location": "SDLogin.click_on_signin_link_to_land_on_secure_sign_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1135183100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Txx@201.com and clicks create account button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Txx@201.com",
+                  "offset": 12
+                }
+              ],
+              "location": "SDLogin.user_enters_and_clicks_create_account_button(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5185337100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters Sumit,Mathur,Pass123,Add1,New York,New York,United States,12345,01234567 and click register button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sumit",
+                  "offset": 12
+                },
+                {
+                  "val": "Mathur",
+                  "offset": 18
+                },
+                {
+                  "val": "Pass123",
+                  "offset": 25
+                },
+                {
+                  "val": "Add1",
+                  "offset": 33
+                },
+                {
+                  "val": "New York",
+                  "offset": 38
+                },
+                {
+                  "val": "New York",
+                  "offset": 47
+                },
+                {
+                  "val": "United States",
+                  "offset": 56
+                },
+                {
+                  "val": "12345",
+                  "offset": 70
+                },
+                {
+                  "val": "01234567",
+                  "offset": 76
+                }
+              ],
+              "location": "SDLogin.user_enters_and_click_register_button(String,String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45521600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify that user is succesfully Registers",
+            "match": {
+              "location": "SDLogin.verify_that_user_is_succesfully_registers()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Registering with invalid email",
+        "description": "",
+        "id": "register-to-site;registering-with-invalid-email;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3520899300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is on home page to validate login",
+            "match": {
+              "location": "SDLogin.user_is_on_home_page_to_validate_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11650175600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Signin link to land on Secure sign in Page",
+            "match": {
+              "location": "SDLogin.click_on_signin_link_to_land_on_secure_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1511897100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters Invalid \u003cEmail\u003e and click on create account button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cEmail\u003e",
+                  "offset": 20
+                }
+              ],
+              "location": "SDLogin.user_enters_invalid_and_click_on_create_account_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 803632800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Email error is displayed on page",
+            "match": {
+              "location": "SDLogin.email_error_is_displayed_on_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1387084700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "close browsers",
+            "match": {
+              "location": "SDLogin.close_browsers()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Register to Site",
+    "description": "",
+    "id": "register-to-site",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Validate MegaMenu functionality",
+        "description": "",
+        "id": "megamenu;validate-megamenu-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3502928700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on home page to validate MegaMenu",
+            "match": {
+              "location": "SDMegaMenu.user_is_on_home_page_to_validate_megamenu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8392370200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User hovers on DRESSES menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DRESSES",
+                  "offset": 15
+                }
+              ],
+              "location": "SDMegaMenu.user_hovers_on_menu(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24329557500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "EVENING DRESSES is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EVENING DRESSES",
+                  "offset": 0
+                }
+              ],
+              "location": "SDMegaMenu.is_displayed(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 369000,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.SDLogin.close_browsers(SDLogin.java:79)\r\n\tat ✽.And close browsers(MegaMenu.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "close browsers",
+            "match": {
+              "location": "SDLogin.close_browsers()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "MegaMenu",
+    "description": "",
+    "id": "megamenu",
+    "keyword": "Feature",
+    "uri": "MegaMenu.feature"
+  }
+]

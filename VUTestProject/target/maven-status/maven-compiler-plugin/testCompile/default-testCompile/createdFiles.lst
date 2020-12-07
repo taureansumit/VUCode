@@ -1,0 +1,4 @@
+stepDefinitions\SDAddToCart.class
+cucumberOptions\TestRunner.class
+stepDefinitions\SDLogin.class
+stepDefinitions\SDMegaMenu.class
